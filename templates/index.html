@@ -6,28 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor="cyam">
-    <h1>....HII YOU ARE WELCOME</h1>
-    <h3>Enter the form data</h3>
-    <h4>(Enter only numeric values)</h4>
+<body bgcolor="cyan">
+    <h1>.... YOU ARE WELCOME</h1>
+    <h1></h1>
+    <h3>hii i am Munshid rahman, this is my project home page</h3>
+    <h2>Topic = Trekking potential prediction</h2>
+    <pre> 
+        In this project, It is predicted that whether a person will be capable of hiking or not, by analysing 
+        certain features such as age,gender, habits like smoking or not, fascination towards 
+        the journey ,climate, jeep service, package price, and feedback of former hikers , with the help of 
+        some collected datas, this project also will try to predict that, what is the feed back the person will after
+        the journey and what is the expected cost for the journey, in order to worke this i have used tree Machine 
+        Learning model
+    </pre>
+
+    <h4>Enter the form data</h4>
+    <h4></h4>
     <div class='containers'>
     <form action="{% url 'result' %}">
         {% csrf_token %}
+        Age: <input type="text" required name='Age'> <br> <br>
 
-        RI: <input type="text" required name='RI'> <br> <br>
-        NA: <input type="text" required name='NA'> <br> <br>
-        MG: <input type="text" required name='MG'> <br> <br>
-        AI: <input type="text" required name='AI'> <br> <br>
-        SI: <input type="text" required name='SI'> <br> <br>
-        K: <input type="text" required name='K'> <br> <br>
-        BA: <input type="text" required name='BA'> <br> <br>
-        CA: <input type="text" required name='CA'> <br> <br>
-        FE: <input type="text" required name='FE'> <br> <br>
-    
+
+        
+
+       
+        <label for="gender">your gender</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="solo/team"> your catetogy</label>
+        <select name="solo/team">
+            <option value="Solo">Solo</option>
+            <option value="Team">Team</option>
+            
+        </select>
+        
+        <label for="smoker/not"> are you smoker</label>
+        <select name="smoker/not">
+            <option value="I do smoke">Yes</option>
+            <option value="i don't smoke">No</option>
+        </select>
+
+        <label for="Jeep_serviece"> do you need Jeep_serviece</label>
+        <select name="Jeep_serviece">
+            <option value="I need vehicle">Yes</option>
+            <option value="I don't need vehicle">No</option>
+        </select>
+
+        <label for="food_habit">which is your food habit</label>
+        <select name="food_habit">
+            <option value="Homely food">Homely food</option>
+            <option value="Fast food">Fast food</option>
+        </select>
+
+
+        <label for="exersice">Do you exersice daily?</label>
+        <select name="exersice">
+            <option value="I do exercise">Yes</option>
+            <option value="I don't exercise">No</option>
+        </select>
+
+        <label for="climate">climate ?</label>
+        <select name="climate">
+            <option value="Rainy">Rainy</option>
+            <option value="Hot">Hot</option>
+        </select>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+
+        
       <input type="submit" name="" value="submit">
     
     
     
             </form>
+        </div> 
+
 </body>
 </html>
