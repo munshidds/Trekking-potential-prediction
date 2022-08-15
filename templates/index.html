@@ -24,6 +24,8 @@
     <div class='containers'>
     <form action="{% url 'result' %}">
         {% csrf_token %}
+        Name: <input type="text" required name='Name'> <br> <br>
+
         Age: <input type="text" required name='Age'> <br> <br>
 
 
@@ -58,7 +60,8 @@
             <option value="I don't need vehicle">No</option>
             <option value="I need vehicle">I have vehicle</option>
 
-
+            <h1></h1>
+            <h1></h>
         </select>
 
         <label for="food_habit">daily food ?</label>

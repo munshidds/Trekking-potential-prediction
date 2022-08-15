@@ -76,14 +76,15 @@ def result(request):
     model1=joblib.load('capability_prediction.sav')
     ans1=model1.predict([list2])
     if ans1=='yes':
-        ans2='Hiii .. Congratulations, You are able to do this trekking'
+        ans2=' Congratulations, You are able to do this trekking'
     else:
-        ans2='Hiii ... , You are NOT eligible for this trekking'
+        ans2=' You are NOT eligible for this trekking'
 
     model2=joblib.load('feed_back_model.sav')
     ans3=model2.predict([list2])
 
+    Name=request.GET['Name']
 
    
     
-    return render(request,'result.html',{'list':list,"ans2":ans2,'ans3':ans3})
+    return render(request,'result.html',{'list':list,"ans2":ans2,'ans3':ans3,'Name':Name})
