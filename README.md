@@ -2,17 +2,20 @@ Overview
 
 Topic = Trekking potential prediction
 In this project, It is predicted that whether a person will be capable of hiking or not, by analysing certain 
-features such as age, height, weight, gender, habits like smoking or not, fascination towards the journey ,
+features such as age, gender, habits like smoking or not, fascination towards the journey ,
 climate, jeep service, package price, and feedback of former hikers , with the help of some collected datas.
 
 Motive
 
-I have some reasons for create Trekking potential prediction, basically, i am a trekking lover, when I was a 
-trekking, I could see that some one of persons were struggling for reaching the target. The reason why they 
-were struggling is their fitness wasn’t okay for the journey. I am sure that using a web like this before come,
-they can understand whether they were  able to do this trekking or not
+I have some reasons for create Trekking potential prediction, basically, i am a trekking lover, when I was in 
+trekking, I could see that some one of hikers were struggling for reaching the target. The reason why they 
+were struggling was that, their fitness wasn’t okay for the journey. before going fora trekking, using a web help like this will 
+make them understand wether they will be capable of hiking or not
 
-Import 
+Imports
+
+
+
 •	import numpy as np
 •	import pandas as pd
 •	import joblib
